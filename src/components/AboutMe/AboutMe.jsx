@@ -1,13 +1,26 @@
 import React from "react";
+import Label from "../Label/Label";
+import Icons from "../../assets/icons/icons";
 
-const AboutMe = ({ id = "" }) => {
+const AboutMe = ({ id = "", openModal, closeModal }) => {
 
-    const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet purus gravida quis blandit turpis cursus in hac. Vestibulum sed arcu non odio.\n\nGravida rutrum quisque non tellus orci ac auctor. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. In cursus turpis massa tincidunt dui ut ornare lectus. Etiam erat velit scelerisque in dictum non consectetur. Vel pretium lectus quam id leo in vitae turpis massa. Convallis posuere morbi leo urna molestie at elementum eu. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum.\n\nEu lobortis elementum nibh tellus molestie. Elit eget gravida cum sociis. Cras semper auctor neque vitae tempus. Sit amet justo donec enim diam vulputate ut. Diam quis enim lobortis scelerisque fermentum dui faucibus. Consequat semper viverra nam libero justo laoreet sit amet cursus.\n\nDonec ac odio tempor orci dapibus. Turpis egestas maecenas pharetra convallis posuere. Nec tincidunt praesent semper feugiat. Sed blandit libero volutpat sed cras ornare arcu dui vivamus. Elit ullamcorper dignissim cras tincidunt lobortis feugiat. Dui id ornare arcu odio. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Magna ac placerat vestibulum lectus mauris ultrices eros in. Aliquam nulla facilisi cras fermentum odio eu. Magna eget est lorem ipsum dolor sit. Blandit volutpat maecenas volutpat blandit. Sed odio morbi quis commodo. Magna eget est lorem ipsum dolor sit amet. Cras tincidunt lobortis feugiat vivamus at augue. Donec enim diam vulputate ut pharetra sit amet aliquam. Lorem mollis aliquam ut porttitor leo. Condimentum id venenatis a condimentum vitae sapien. Arcu dui vivamus arcu felis bibendum. Enim sit amet venenatis urna cursus eget nunc scelerisque.\n\nFacilisis leo vel fringilla est ullamcorper eget. Volutpat diam ut venenatis tellus in metus vulputate. Purus non enim praesent elementum facilisis leo. Donec ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquet nibh praesent tristique magna sit amet purus gravida. Nibh sit amet commodo nulla. Justo nec ultrices dui sapien eget mi proin sed. Turpis in eu mi bibendum neque egestas. Aliquam ultrices sagittis orci a scelerisque purus semper eget. Vitae sapien pellentesque habitant morbi tristique senectus et. Augue mauris augue neque gravida in fermentum et sollicitudin."
+    const text = "Seasoned frontend developer specializing in React, dedicated to crafting engaging and intuitive web applications. Well-versed in JavaScript, HTML, and CSS, with a keen understanding of component-based structures, effective state management, and responsive design principles.\nA collaborative team member committed to delivering top-notch, high-performance code. Enthusiastic about ongoing learning and staying abreast of the latest trends and best practices in frontend development."
 
     return (
         <section id={id} className="flex flex-col justify-center">
-            <h1 className="font-jetbrains">About Me</h1>
-            <p className="font-monolisa text-sm text-justify p-4">{text}</p>
+            <div>
+                <Label type="title" cssClass="font-jetbrains p-4">About Me</Label>
+            </div>
+            <div className="flex flex-col justify-center tablet:flex-row">
+                <img src="/portfolio/static/img/Azhan.jpg" className="w-[100%] tablet:w-[50%]" />
+                <div className="text-left">
+                    <Label type="paragraph" cssClass="font-monolisa text-sm break-normal text-justify p-4">{text}</Label>
+                    <p onClick={() => { openModal() }} className="font-monolisa items-center inline-flex flex-row px-4 hover:text-transparent bg-gradient-to-l from-[#FE8DC6] to-[#ff7db7e1] bg-clip-text transition ease-in delay-150 cursor-pointer">
+                        <Icons iconId="download" style="w-4 m-1" />
+                        View Resume
+                    </p>
+                </div>
+            </div>
         </section>
     )
 }

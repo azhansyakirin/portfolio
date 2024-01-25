@@ -1,0 +1,12 @@
+.horizontalText {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    white-space: nowrap;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &:hover {
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+}

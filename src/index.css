@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Assistant:wght@300;400;500;600;700;800&family=Lato&family=Sacramento&display=swap');
+  src: url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Assistant:wght@300;400;500;600;700;800&family=Lato&family=Sacramento&display=swap");
 }
 
 :root {
@@ -97,7 +97,6 @@ button:focus-visible {
 }
 
 @layer components {
-
   ::-webkit-scrollbar {
     @apply w-[4px] h-0;
   }
@@ -113,4 +112,8 @@ button:focus-visible {
 
 section {
   padding: 5rem;
+
+  @media (max-width: 640px) {
+    padding: 1rem;
+  }
 }

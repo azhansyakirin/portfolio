@@ -6,4 +6,8 @@
     min-height: 100%;
     align-items: center;
     align-content: center;
+
+    @media(max-width:640px) {
+        letter-spacing: 0;
+    }
 }
