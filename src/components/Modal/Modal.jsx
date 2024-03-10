@@ -1,9 +1,6 @@
 import React, { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import GithubIcon from "../../assets/icons/github.svg";
 import classNames from "classnames";
-// import css from "./Modal.scss"
-
 
 const Modal = ({ isOpen, closeModal, cssClass, children }) => {
 

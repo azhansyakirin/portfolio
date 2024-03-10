@@ -10,7 +10,7 @@ const Footer = () => {
                 <Icons iconId="Whatsapp" style="w-8 cursor-pointer" />
             </div>
             <div className="social-icons static bottom-0 flex justify-center gap-4 py-2">
-                <p>2024 | Made with Love by Azhan Syakirin</p>
+                <p>2024 | Made with &hearts; by Azhan Syakirin</p>
             </div>
         </footer>
     )

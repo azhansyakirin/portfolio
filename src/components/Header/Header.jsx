@@ -55,7 +55,7 @@ const Header = () => {
                             <li key={e.id}>
                                 <a
                                     href={e.url}
-                                    className="text-primary font-monolisa hover:text-transparent bg-gradient-to-l from-[#FE8DC6] to-[#ff7db7e1] bg-clip-text transition ease-in delay-150"
+                                    className="text-primary font-notosans hover:text-transparent bg-gradient-to-l from-[#FE8DC6] to-[#ff7db7e1] bg-clip-text transition ease-in delay-150"
                                     onClick={()=>setOpenNavigation(false)}
                                 >
                                     {e.label}
@@ -82,7 +82,7 @@ const Header = () => {
                             <li key={e.id}>
                                 <a
                                     href={e.url}
-                                    className="text-primary font-monolisa hover:text-transparent bg-gradient-to-l from-[#FE8DC6] to-[#ff7db7e1] bg-clip-text transition ease-in delay-150"
+                                    className="text-primary font-notosans hover:text-transparent bg-gradient-to-l from-[#FE8DC6] to-[#ff7db7e1] bg-clip-text transition ease-in delay-150"
                                 >
                                     {e.label}
                                 </a>
