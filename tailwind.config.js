@@ -16,13 +16,12 @@ export default {
         'accent': '#7a7995',
       },
       fontFamily: {
-        monolisa: ['MonoLisa'],
+        notosans: ['NotoSansMono-Regular'],
         jetbrains: ['Jetbrains'],
         jetbrainsItalic: ['JetbrainsItalic'],
         lato: ['Lato']
       }
     },
   },
-  plugins: [],
-
+  plugins: [require("daisyui")],
 }
