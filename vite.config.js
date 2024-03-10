@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite'
-import { copy } from 'vite-plugin-copy';
 import react from '@vitejs/plugin-react'
 import svgr from "vite-plugin-svgr";
 import sass from 'sass';
@@ -9,10 +8,6 @@ export default defineConfig({
   plugins: [
     react(),
     svgr(),
-    copy({
-      targets: [{ src: 'node_modules/pdfjs-dist/build/pdf.worker.min.js', dest: 'public/static/js' }],
-      hook: 'writeBundle', // Trigger the copy operation during the build process
-    }),
   ],
   css: {
     preprocessorOptions: {

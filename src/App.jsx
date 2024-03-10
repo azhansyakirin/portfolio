@@ -1,35 +1,56 @@
-import { useEffect, useState } from 'react'
-import './App.css'
+import React from 'react'
 import Hero from './components/Hero/Hero'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import AboutMe from './components/AboutMe/AboutMe'
 import { PlayParticles } from './components/PlayParticles/PlayParticles';
 import Quicklink from './components/Quicklink/Quicklink'
-import Modal from "./components/Modal/Modal"
+import { Carousel } from './components/Carousel'
+import { Card } from './components/Card'
+import { TechStackArr, TimelineArr, ProjectArr } from './data';
+import './App.css'
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const openModal = () => setIsOpen(true);
-  const closeModal = () => setIsOpen(false);
-
   return (
     <>
       <PlayParticles />
       <div className='flex w-full justify-center sticky top-4 z-10'>
         <Header />
       </div>
-      <Hero id="Hero" />
-      <button
-        onClick={() => setIsOpen(true)}
-        className='font-lato font-bold border-0 py-2 px-16 justify-center bg-gradient-to-r from-[#FE8DC6] to-[#ff7db7e1]'>
-        BOOM
-      </button>
-      <AboutMe id="About" openModal={openModal} closeModal={closeModal} />
-      <Modal isOpen={isOpen} closeModal={closeModal} cssClass="tablet:min-w-[45rem] h-[90vh]" >
-        <iframe title="PDF Viewer" src="/portfolio/static/docs/resume.pdf" width="100%" height="100%" />
-      </Modal>
+      <section id='#'>
+        <Hero />
+      </section>
+      <section id="About">
+        <AboutMe />
+      </section>
+      <section id="Experiences">
+        <h1 className="sectionTitle">My Experiences</h1>
+        <div className="flex flex-row flex-wrap gap-4 justify-center p-8">
+          {TimelineArr.map((x, idx) => (
+            <Card item={x} index={idx} />
+          ))}
+        </div>
+      </section>
+      <section id="Projects">
+        <h1 className="sectionTitle">My Projects</h1>
+        <div className="flex flex-wrap gap-4 justify-center w-full p-8">
+          {ProjectArr.map((x, idx) => (
+            <Card item={x} index={idx} />
+          ))}
+        </div>
+      </section>
+      <section id='techstack' className='w-full'>
+        <h1 className='sectionTitle'>Tech Stacks</h1>
+        <div className='my-16'>
+          <Carousel carouselData={TechStackArr} />
+        </div>
+      </section>
+      <section id='Contact' className='w-full'>
+        <h1 className='sectionTitle'>Contact Me</h1>
+        <div className='p-8'>
+          <p className='text-center text-xl'>Interested? Send me 'Hello' at <a href='mailto:azhansyakirin@gmail.com' className='hover:gradient-primary'>azhansyakirin@gmail.com</a></p>
+        </div>
+      </section>
       <Quicklink />
       <Footer />
     </>

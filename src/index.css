@@ -24,12 +24,13 @@
 }
 
 :root {
-  line-height: 1.5;
+  /* line-height: 1.5; */
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  font-family: "Poppins", sans-serif;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -37,19 +38,6 @@
   -moz-osx-font-smoothing: grayscale;
 
   scroll-behavior: smooth;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 @layer components {
@@ -63,6 +51,14 @@
 
   ::-webkit-scrollbar-thumb {
     @apply bg-gradient-to-b from-[#FE8DC6] to-[#ff7db7e1];
+  }
+
+  .gradient-primary {
+    @apply text-transparent bg-gradient-to-r from-[#FE8DC6] to-[#ff7db7e1] bg-clip-text;
+  }
+
+  .sectionTitle {
+    @apply text-center leading-normal text-4xl tablet:text-6xl;
   }
 }
 

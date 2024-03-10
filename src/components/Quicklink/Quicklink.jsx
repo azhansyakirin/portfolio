@@ -38,9 +38,9 @@ const Quicklink = () => {
             <ScrollTop />
             <div className="fixed bottom-10 right-5 w-7">
                 <ul className="gap-4 inline-flex flex-col">
-                    <a className="cursor-pointer"><Icons iconId="GitHub" style="opacity-50 transition-opacity hover:opacity-100" /></a>
-                    <a className="cursor-pointer"><Icons iconId="LinkedIn" style="opacity-50 transition-opacity hover:opacity-100" /></a>
-                    <a className="cursor-pointer"><Icons iconId="Whatsapp" style="opacity-50 transition-opacity hover:opacity-100" /></a>
+                    <a className="cursor-pointer" href="https://github.com/azhansyakirin"><Icons iconId="GitHub" style="opacity-50 transition-opacity hover:opacity-100" /></a>
+                    <a className="cursor-pointer" href="https://www.linkedin.com/in/azhansyakirin/"><Icons iconId="LinkedIn" style="opacity-50 transition-opacity hover:opacity-100" /></a>
+                    <a className="cursor-pointer" href="https://wa.me/60142620833"><Icons iconId="Whatsapp" style="opacity-50 transition-opacity hover:opacity-100" /></a>
                 </ul>
             </div>
         </Fragment>
