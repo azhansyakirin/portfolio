@@ -14,12 +14,17 @@ export default {
         'primary': '#454657',
         'secondary': '#454657',
         'accent': '#7a7995',
+        'app-black-1': '#292929',
+        'app-black-2': '#212121',
+        'app-black-3': '#373737',
       },
       fontFamily: {
         notosans: ['NotoSansMono-Regular'],
         jetbrains: ['Jetbrains'],
         jetbrainsItalic: ['JetbrainsItalic'],
-        lato: ['Lato']
+        lato: ['Lato'],
+        sourceSerif: ['Source-Serif-4'],
+        caveat: ['Caveat'],
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 50s linear infinite',
