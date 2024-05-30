@@ -1,0 +1,27 @@
+@import "./_mixins.scss";
+
+.gradient-border {
+    @include gradient-border(4px, #F7941D, #FF607B);
+    background: white;
+    border-radius: 0.5rem;
+    padding: 0.01rem;
+    z-index: 0;
+}
+
+@page {
+    size: A4;
+    margin: 1cm;
+}
+
+@media print {
+    body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        background-color: #292929;
+    }
+
+    .noprint {
+        display: none;
+    }
+}
