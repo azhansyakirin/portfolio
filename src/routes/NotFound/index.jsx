@@ -19,9 +19,10 @@ export const NotFound = () => {
     };
 
     return (
-        <section className="flex flex-col text-left h-[100vh]">
+        <section className="flex flex-col gap-4 text-left h-[100vh]">
             {renderPageTitle()}
-            <h1 className="text-4xl text-left gradient-orange">Woops! Seem's like you hit wrong path</h1>
+            <h1 className="text-4xl text-left gradient-orange">Woops! Seem's like you hit the wrong path.</h1>
+            <h1 className="text-3xl font-caveat text-left">Hang tight, we will bring you back on track.</h1>
             <h1 className="text-4xl text-left font-caveat cursor-pointer" onClick={() => navigate('/')}>&larr; Go Back</h1>
         </section>
     )
