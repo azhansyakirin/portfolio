@@ -3,11 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "NotoSansMono-Regular";
-  src: url("./assets/fonts/NotoSansMono-Regular.ttf");
-}
-
-@font-face {
   font-family: "JetbrainsItalic";
   font-style: italic;
   src: url("./assets/fonts/JetBrainsMono-Light-Italic.ttf");
@@ -20,7 +15,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Assistant:wght@300;400;500;600;700;800&family=Lato&family=Sacramento&display=swap");
+  src: url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 }
 
 @font-face {
