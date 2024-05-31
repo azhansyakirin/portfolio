@@ -85,7 +85,7 @@ const Footer = () => {
         <footer className={classNames(globalCss.noprint, "font-jetbrains tablet:w-full text-sm fixed right-0 bottom-1/4 tablet:bottom-1 z-50")}>
             <main className="p-3 tablet:p-1 tablet:w-2/5 rounded-md shadow-md m-auto bg-app-black-2 flex flex-col items-center justify-center gap-1">
                 <div className="social-icons py-2 flex flex-col tablet:flex-row gap-4">
-                    <a className="opacity-50 hover:opacity-100" onClick={() => {window.open('/portfolio/static/docs/resume.pdf', '_blank')}} title="Print My Resume"><Icons iconId="print" style="w-8 cursor-pointer" /></a>
+                    <a className="opacity-50 hover:opacity-100" onClick={() => {window.open('/static/docs/resume.pdf', '_blank')}} title="Print My Resume"><Icons iconId="print" style="w-8 cursor-pointer" /></a>
                     <a className="opacity-50 hover:opacity-100" href="https://github.com/azhansyakirin" title="Deep dive to my github contribution"><Icons iconId="GitHub" style="w-8 cursor-pointer" /></a>
                     <a className="opacity-50 hover:opacity-100" href="https://www.linkedin.com/in/azhansyakirin/" title="Connect with me on LinkedIn"><Icons iconId="LinkedIn" style="w-8 cursor-pointer" /></a>
                     <a className="opacity-50 hover:opacity-100" href="https://wa.me/60142620833" title="Let's have a chit chat on Whatsapp"><Icons iconId="Whatsapp" style="w-8 cursor-pointer" /></a>

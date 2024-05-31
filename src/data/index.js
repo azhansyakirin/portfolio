@@ -144,8 +144,8 @@ let Languages = [
 ];
 
 let ContactReferences = [
-    { name: "Munigala Arun", company: "Maybank Berhad", position: "Senior Solution Analyst", contact: "+60-1123151751" },
-    { name: "Muzalina Alias", company: "Prime Minister Office", position: "Head of IT Department", contact: "+60-122408069" },
+    { name: "Munigala Arun", company: "Maybank Berhad", position: "Senior Solution Analyst", contact: "+60-11********" },
+    { name: "Muzalina Alias", company: "Prime Minister Office", position: "Head of IT Department", contact: "+60-12*******" },
 ]
 
 export {
