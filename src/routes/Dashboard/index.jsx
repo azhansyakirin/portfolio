@@ -29,7 +29,7 @@ export const Dashboard = () => {
             <meta name='description' content="Welcome to my personal online portfolio." />
             <meta property="og:title" content={`Portfolio | Azhan Syakirin`} />
             <meta property="og:description" content="Welcome to my personal online portfolio." />
-            <meta property="og:image" content="/portfolio/static/img/memoji.jpg" />
+            <meta property="og:image" content="/static/img/memoji.jpg" />
             <meta name="twitter:title" content={`Portfolio | Azhan Syakirin`} />
             <meta name="twitter:description" content="Welcome to my personal online portfolio." />
         </Helmet>
@@ -41,7 +41,7 @@ export const Dashboard = () => {
             <div className='flex flex-col tablet:flex-row'>
                 <section id="left-panel" className='bg-[#292929] w-full tablet:w-[30%] px-[3rem] pt-[109px] relative overflow-hidden'>
                     <figure className='absolute top-3 -right-5 rounded-full'>
-                        <img className='object-cover w-40 rounded-full -rotate-12' src="/portfolio/static/img/memoji.jpg" />
+                        <img className='object-cover w-40 rounded-full -rotate-12' src="/static/img/memoji.jpg" />
                     </figure>
                     <main id="Name" className='py-8 text-3xl desktop:text-4xl'>
                         <span className='font-caveat gradient-orange'>Hello, I'm</span>
@@ -132,10 +132,10 @@ export const Dashboard = () => {
                         </div>
                     </main> */}
                     <main className='flex flex-row flex-wrap gap-4 py-8'>
-                        <Link className='font-caveat gradient-orange text-2xl tablet:text-3xl hover:text-white hover:underline' to="/portfolio/recent-project/">Projects</Link>
-                        <Link className='font-caveat gradient-orange text-2xl tablet:text-3xl hover:text-white hover:underline' to="/portfolio/side-project/">Side Project</Link>
-                        <Link className='font-caveat gradient-orange text-2xl tablet:text-3xl hover:text-white hover:underline' to="/portfolio/figma-design">Figma Design</Link>
-                        <Link className='font-caveat gradient-orange text-2xl tablet:text-3xl hover:text-white hover:underline' to="/portfolio/community-engagement">Community Engagement</Link>
+                        <Link className='font-caveat gradient-orange text-2xl tablet:text-3xl hover:text-white hover:underline' to="/recent-project/">Projects</Link>
+                        <Link className='font-caveat gradient-orange text-2xl tablet:text-3xl hover:text-white hover:underline' to="/side-project/">Side Project</Link>
+                        <Link className='font-caveat gradient-orange text-2xl tablet:text-3xl hover:text-white hover:underline' to="/figma-design">Figma Design</Link>
+                        <Link className='font-caveat gradient-orange text-2xl tablet:text-3xl hover:text-white hover:underline' to="/community-engagement">Community Engagement</Link>
                     </main>
                 </section>
                 <Footer />

@@ -24,7 +24,7 @@ const icons = {
     Whatsapp: Whatsapp,
     Hamburger: Hamburger,
     Close: Close,
-    download: "/portfolio/static/icons/download.svg",
+    download: "/static/icons/download.svg",
     code: Code,
     mail: Mail,
     phone: Phone,
@@ -36,7 +36,7 @@ const icons = {
     pin: Pin,
     calendar: Calendar,
     print: Print,
-    bulb: "/portfolio/static/icons/bulb.svg",
+    bulb: "/static/icons/bulb.svg",
     chat: Chat,
 }
 

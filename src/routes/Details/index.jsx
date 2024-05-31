@@ -59,14 +59,14 @@ export const Details = ({ }) => {
                             {ProjectArr.map((obj, index) => (
                                 <div key={index} className={`shadow-md w-full py-4 px-8 h-20 ${selectedProjectId === obj.projectId ? 'gradient-orange' : ''}`}>
                                     <h1
-                                        onClick={() => {navigate(`/portfolio/recent-project/${obj.projectId}`); handleShowMenu()}}
+                                        onClick={() => {navigate(`/recent-project/${obj.projectId}`); handleShowMenu()}}
                                         className='cursor-pointer'
                                     >
                                         {obj.title}
                                     </h1>
                                 </div>
                             ))}
-                            <p onClick={() => navigate('/portfolio')} className='cursor-pointer'>&larr; Go Back</p>
+                            <p onClick={() => navigate('/')} className='cursor-pointer'>&larr; Go Back</p>
                         </div>
                     </section>)
                     : (<span className='absolute top-5 right-5 z-50 cursor-pointer' onClick={handleShowMenu}>
@@ -82,12 +82,12 @@ export const Details = ({ }) => {
                             <div className={`shadow-md w-full py-4 px-8 h-20 ${selectedProjectId === obj.projectId ? 'gradient-orange' : ''}`}>
                                 <h1
                                     key={index}
-                                    onClick={() => navigate(`/portfolio/recent-project/${obj.projectId}`)}
+                                    onClick={() => navigate(`/recent-project/${obj.projectId}`)}
                                     className='cursor-pointer'
                                 >{obj.title}</h1>
                             </div>
                         ))}
-                        <p onClick={() => navigate('/portfolio')} className='cursor-pointer'>&larr; Go Back</p>
+                        <p onClick={() => navigate('/')} className='cursor-pointer'>&larr; Go Back</p>
                     </div>
                 </section>)
             }

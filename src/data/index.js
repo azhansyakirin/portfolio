@@ -1,20 +1,20 @@
 const demoText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
 
 const TechStackArr = [
-    { label: "React Js", icon: "/portfolio/static/icons/reactjs.svg" },
-    { label: "Redux", icon: "/portfolio/static/icons/redux.svg" },
-    { label: "HTML", icon: "/portfolio/static/icons/html5.svg" },
-    { label: "Sass", icon: "/portfolio/static/icons/sass.svg" },
-    { label: "CSS", icon: "/portfolio/static/icons/css3.svg" },
-    { label: "JavaScript", icon: "/portfolio/static/icons/js.svg" },
-    { label: "Tailwind", icon: "/portfolio/static/icons/tailwindcss.svg" },
-    { label: "Figma", icon: "/portfolio/static/icons/figma.svg" },
-    { label: "Bootstrap", icon: "/portfolio/static/icons/bootstrap4.svg" },
-    { label: "Google Analytics", icons: "/portfolio/static/icons/analytics.svg" },
-    { label: "Illustrator", icons: "/portfolio/static/icons/illustrator.svg" },
-    { label: "Git", icon: "/portfolio/static/icons/git.svg" },
-    { label: "Jira", icon: "/portfolio/static/icons/jira.svg" },
-    { label: "Php", icon: "/portfolio/static/icons/php.svg" },
+    { label: "React Js", icon: "/static/icons/reactjs.svg" },
+    { label: "Redux", icon: "/static/icons/redux.svg" },
+    { label: "HTML", icon: "/static/icons/html5.svg" },
+    { label: "Sass", icon: "/static/icons/sass.svg" },
+    { label: "CSS", icon: "/static/icons/css3.svg" },
+    { label: "JavaScript", icon: "/static/icons/js.svg" },
+    { label: "Tailwind", icon: "/static/icons/tailwindcss.svg" },
+    { label: "Figma", icon: "/static/icons/figma.svg" },
+    { label: "Bootstrap", icon: "/static/icons/bootstrap4.svg" },
+    { label: "Google Analytics", icons: "/static/icons/analytics.svg" },
+    { label: "Illustrator", icons: "/static/icons/illustrator.svg" },
+    { label: "Git", icon: "/static/icons/git.svg" },
+    { label: "Jira", icon: "/static/icons/jira.svg" },
+    { label: "Php", icon: "/static/icons/php.svg" },
 ];
 
 const TimelineArr = [
@@ -24,7 +24,7 @@ const TimelineArr = [
         title: "Maybank Berhad",
         position: "Frontend Developer",
         location: "Kuala Lumpur",
-        image: "/portfolio/static/icons/maybank-avatar.svg",
+        image: "/static/icons/maybank-avatar.svg",
         description: "• Lead frontend team for monthly releases and assume  responsibility for successful delivery\n\n• Perform first-level code review and merge UI code for monthly  production packages\n\n• Guide new team members in understanding React JS and  Maybank2u product domain knowledge\n\n• Address production issues raised by MGCC in a timely manner\n\n• Enforce standard guidelines for Maybank2u codebase across  project teams\n\n• Participate in sprint projects and contribute to business  requirements meetings for product quality assurance\n\n• Practice agile development methodology\n\n• Implement best practices for code-level optimization, including  high-order components and highly reusable dynamic components",
         badge: ['React', 'Redux', 'Scss', 'Webpack', 'Github Actions', 'Jira', 'Bootstrap']
     },
@@ -34,7 +34,7 @@ const TimelineArr = [
         title: "Prime Minister Office",
         position: "Fullstack Developer",
         location: "Putrajaya",
-        image: "/portfolio/static/icons/jata.svg",
+        image: "/static/icons/jata.svg",
         description: "• Developed internal systems for staff use, including Intranet Portal,  IT Helpdesk application, MCO attendance system, Sign Language  Interpreter Application System\n\n• Provided ongoing support and maintenance for existing  applications and servers.\n\n• Set up and configured internal network infrastructure.\n\n• Resolved tickets and provided technical support to ensure smooth  operations.",
         badge: ['Html', 'Css', 'Php', 'Jquery']
     },
@@ -45,7 +45,7 @@ const ProjectArr = [
         idx: 1,
         timeline: 'May 2024 - Jul 2024',
         title: "Maybank2u Recaptcha for Reset Password",
-        image: "/portfolio/static/img/maybank-tower.jpg",
+        image: "/static/img/maybank-tower.jpg",
         recommended: false,
         description: 'This project is to add ReCAPTCHA field for reset password section in order to prevent from bot attack.',
         badge: ['React', 'Google Recaptcha', 'Scss'],
@@ -56,55 +56,55 @@ const ProjectArr = [
         idx: 1,
         timeline: 'Nov 2023 - Sep 2024',
         title: "Maybank2u Transaction History Download",
-        image: "/portfolio/static/img/maybank-tower.jpg",
+        image: "/static/img/maybank-tower.jpg",
         recommended: false,
         description: 'This project is to allow user to download Transaction History in different formats such as CSV, PDF or XLS in a few period options.',
         badge: ['React', 'Redux', 'Scss', 'Webpack', 'Github Actions', 'Jira', 'Bootstrap', 'REST API'],
         link: "https://maybank2u.com.my",
         projectId: "m2u-trx-history-2024",
-        snapshot: ["/portfolio/static/img/transaction-history-download.png"]
+        snapshot: ["/static/img/transaction-history-download.png"]
     },
     {
         idx: 2,
         timeline: 'July 2023 - Aug 2023',
         title: "Maybank2u Browser Version Handling",
-        image: "/portfolio/static/img/maybank-tower.jpg",
+        image: "/static/img/maybank-tower.jpg",
         recommended: "BNM Mandatory",
         description: 'This project is to handle user accessing Maybank2u web via supported browser versions.',
         badge: ['Javascript'],
         link: "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/announcements/2023/august/web-browser-compatibility.page",
         projectId: "m2u-browser-handling-2023",
-        snapshot: ["/portfolio/static/img/unsupported-browser.png"]
+        snapshot: ["/static/img/unsupported-browser.png"]
     },
     {
         idx: 3,
         timeline: 'Dec 2022 - Mar 2023',
         title: "Maybank2u Kill Switch (Phase 2)",
-        image: "/portfolio/static/img/maybank-tower.jpg",
+        image: "/static/img/maybank-tower.jpg",
         recommended: "BNM Mandatory",
         description: "This project objectives is to allow customers to perform suspend current/savings account or block credit card through Maybank2u as a new security measures to safeguard against online scams.",
         badge: ['React', 'Redux', 'Scss', 'Webpack', 'Github Actions', 'Jira', 'Bootstrap', 'REST API'],
         link: "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/services/digital_banking/kill-switch.page",
         projectId: "m2u-kill-switch-mvp2-2023",
-        snapshot: ["/portfolio/static/img/block-cards.png", "/portfolio/static/img/suspend-account-1.png", "/portfolio/static/img/suspend-account-2.png"]
+        snapshot: ["/static/img/block-cards.png", "/static/img/suspend-account-1.png", "/static/img/suspend-account-2.png"]
     },
     {
         idx: 4,
         timeline: 'Sep 2022 - Dec 2022',
         title: "Maybank2u Kill Switch (Phase 1)",
-        image: "/portfolio/static/img/maybank-tower.jpg",
+        image: "/static/img/maybank-tower.jpg",
         recommended: "BNM Mandatory",
         description: "This project objectives is to allow customers to perform deactivation of Maybank2u access via Maybank2u as a new security measures to safeguard against online scams.",
         badge: ['React', 'Redux', 'Scss', 'Webpack', 'Github Actions', 'Jira', 'Bootstrap', 'REST API'],
         link: "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/services/digital_banking/kill-switch.page",
         projectId: "m2u-kill-switch-mvp1-2023",
-        snapshot: ["/portfolio/static/img/deactivate-m2u-access.png"]
+        snapshot: ["/static/img/deactivate-m2u-access.png"]
     },
     {
         idx: 5,
         timeline: 'Sep 2022 - Jan 2023',
         title: "Maybank2u Personal Settings Enhancement",
-        image: "/portfolio/static/img/maybank-tower.jpg",
+        image: "/static/img/maybank-tower.jpg",
         recommended: false,
         description: "This project is to give a customers fresh look on personalize their details.",
         badge: ['React', 'Redux', 'Scss', 'Webpack', 'Github Actions', 'Jira', 'Bootstrap', 'REST API'],
@@ -116,13 +116,13 @@ const ProjectArr = [
         idx: 6,
         timeline: 'Aug 2022 - Oct 2022',
         title: "Maybank2u London Statement",
-        image: "/portfolio/static/img/maybank-tower.jpg",
+        image: "/static/img/maybank-tower.jpg",
         recommended: false,
         description: "This project is to allow customers with Maybank2u United Kingdom's account to view and access their statement straight away from Maybank2u Malaysia.",
         badge: ['React', 'Redux', 'Scss', 'Webpack', 'Github Actions', 'Jira', 'Bootstrap', 'REST API'],
         link: "https://maybank2u.com.my",
         projectId: "m2u-london-statement-2022",
-        snapshot: ["/portfolio/static/img/london-account-linking.png"]
+        snapshot: ["/static/img/london-account-linking.png"]
     },
 ];
 

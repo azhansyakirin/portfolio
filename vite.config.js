@@ -4,7 +4,7 @@ import svgr from "vite-plugin-svgr";
 import sass from 'sass';
 
 export default defineConfig({
-  base: "/portfolio",
+  base: "/",
   plugins: [
     react(),
     svgr(),
@@ -18,6 +18,6 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    assetsDir: 'static',
+    assetsDir: 'assets',
   },
 })

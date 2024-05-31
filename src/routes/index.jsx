@@ -9,9 +9,9 @@ export const PageRoutes = () => {
         <Router>
             <Suspense fallback={<div>...loading</div>}>
                 <Routes>
-                    <Route path="/portfolio/" element={<Dashboard />} />
-                    <Route path="/portfolio/recent-project/" element={<Details />} />
-                    <Route path="/portfolio/recent-project/:projectId" element={<Details />} />
+                    <Route path="/" element={<Dashboard />} />
+                    <Route path="/recent-project/" element={<Details />} />
+                    <Route path="/recent-project/:projectId" element={<Details />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </Suspense>
