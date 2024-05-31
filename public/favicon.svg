@@ -1,9 +1,9 @@
-<svg width="33" height="27" viewBox="0 0 33 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M20.0894 0.0399221C20.6755 0.203399 21.0211 0.821845 20.8612 1.42126L14.2612 26.1707C14.1014 26.7702 13.4967 27.1236 12.9106 26.9601C12.3245 26.7966 11.9789 26.1782 12.1388 25.5787L18.7388 0.829258C18.8986 0.229843 19.5033 -0.123555 20.0894 0.0399221ZM23.4222 4.82969C23.8518 4.39036 24.5482 4.39036 24.9778 4.82969L32.6778 12.7045C33.1074 13.1439 33.1074 13.8561 32.6778 14.2955L24.9778 22.1703C24.5482 22.6096 23.8518 22.6096 23.4222 22.1703C22.9926 21.731 22.9926 21.0187 23.4222 20.5794L30.3444 13.5L23.4222 6.42064C22.9926 5.98131 22.9926 5.26902 23.4222 4.82969ZM9.57782 4.82969C10.0074 5.26902 10.0074 5.98131 9.57782 6.42064L2.65563 13.5L9.57782 20.5794C10.0074 21.0187 10.0074 21.731 9.57782 22.1703C9.14824 22.6096 8.45176 22.6096 8.02218 22.1703L0.322183 14.2955C-0.107394 13.8561 -0.107394 13.1439 0.322183 12.7045L8.02218 4.82969C8.45176 4.39036 9.14824 4.39036 9.57782 4.82969Z" fill="url(#paint0_radial_17_4)"/>
+<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.5 3.86364L19 8L14.5 12.1364M5.5 12.1364L1 8L5.5 3.86364M11.9286 1.5L8.07143 14.5" stroke="url(#paint0_linear_57_46)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 <defs>
-<radialGradient id="paint0_radial_17_4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(16.5 13.5) rotate(90) scale(13.5 16.5)">
-<stop stop-color="#FE8DC6"/>
-<stop offset="1" stop-color="#FF7DB8" stop-opacity="0.8"/>
-</radialGradient>
+<linearGradient id="paint0_linear_57_46" x1="10" y1="1.5" x2="10" y2="14.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F7941D"/>
+<stop offset="1" stop-color="#FF607B"/>
+</linearGradient>
 </defs>
 </svg>

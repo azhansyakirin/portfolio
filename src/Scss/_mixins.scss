@@ -1,0 +1,21 @@
+// _mixins.scss
+
+@mixin gradient-border($border-width: 4px, $gradient-start: #F7941D, $gradient-end: #FF607B) {
+    position: relative;
+    padding: $border-width; /* Padding equal to the border width */
+    background-clip: padding-box; /* Ensure content is not covered by background */
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: -$border-width;
+      left: -$border-width;
+      right: -$border-width;
+      bottom: -$border-width;
+      background: linear-gradient(to right, $gradient-start, $gradient-end);
+      z-index: -1; /* Ensure the pseudo-element is below the content */
+      border-radius: inherit; /* Match the border-radius of the element */
+      padding: $border-width; /* Padding equal to the border width */
+      box-sizing: border-box; /* Ensure padding does not affect the size */
+    }
+  }
