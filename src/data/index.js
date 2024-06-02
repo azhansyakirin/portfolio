@@ -127,8 +127,8 @@ const ProjectArr = [
 ];
 
 let CoreDetails = [
-    { icon: "LinkedIn", title: "LinkedIn", label: "linkedin.com/in/azhansyakirin", actionUrl: "https://www.linkedin.com/in/azhansyakirin/" },
-    { icon: "GitHub", title: "Website", label: "github.com/azhansyakirin", actionUrl: "https://github.com/azhansyakirin" },
+    { icon: "LinkedIn", title: "LinkedIn", label: "linkedin.azhansyakirin.dev", actionUrl: "https://www.linkedin.com/in/azhansyakirin/" },
+    { icon: "GitHub", title: "Website", label: "github.azhansyakirin.dev", actionUrl: "https://github.com/azhansyakirin" },
     { icon: "mail", title: "Email", label: "azhansyakirin@gmail.com", actionUrl: "mailto:azhansyakirin@gmail.com" },
     { icon: "phone", title: "Phone", label: "+60-142620833", actionUrl: "tel:+60142620833" },
 ];
