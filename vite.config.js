@@ -19,5 +19,10 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+      },
+    },
   },
 })
