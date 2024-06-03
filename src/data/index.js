@@ -1,22 +1,5 @@
 const demoText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
 
-const TechStackArr = [
-    { label: "React Js", icon: "/static/icons/reactjs.svg" },
-    { label: "Redux", icon: "/static/icons/redux.svg" },
-    { label: "HTML", icon: "/static/icons/html5.svg" },
-    { label: "Sass", icon: "/static/icons/sass.svg" },
-    { label: "CSS", icon: "/static/icons/css3.svg" },
-    { label: "JavaScript", icon: "/static/icons/js.svg" },
-    { label: "Tailwind", icon: "/static/icons/tailwindcss.svg" },
-    { label: "Figma", icon: "/static/icons/figma.svg" },
-    { label: "Bootstrap", icon: "/static/icons/bootstrap4.svg" },
-    { label: "Google Analytics", icons: "/static/icons/analytics.svg" },
-    { label: "Illustrator", icons: "/static/icons/illustrator.svg" },
-    { label: "Git", icon: "/static/icons/git.svg" },
-    { label: "Jira", icon: "/static/icons/jira.svg" },
-    { label: "Php", icon: "/static/icons/php.svg" },
-];
-
 const TimelineArr = [
     {
         idx: 1,
@@ -126,29 +109,6 @@ const ProjectArr = [
     },
 ];
 
-let CoreDetails = [
-    { icon: "LinkedIn", title: "LinkedIn", label: "linkedin.azhansyakirin.dev", actionUrl: "https://www.linkedin.com/in/azhansyakirin/" },
-    { icon: "GitHub", title: "Website", label: "github.azhansyakirin.dev", actionUrl: "https://github.com/azhansyakirin" },
-    { icon: "mail", title: "Email", label: "azhansyakirin@gmail.com", actionUrl: "mailto:azhansyakirin@gmail.com" },
-    { icon: "phone", title: "Phone", label: "+60-142620833", actionUrl: "tel:+60142620833" },
-];
-
-let Education = [
-    { course: "Bachelor of Computer Science", school: "Universiti Putra Malaysia", year: "2017-2021" },
-    { course: "Matriculation Program", school: "Kolej Matrikulasi Selangor", year: "2015-2017" }
-];
-
-let Languages = [
-    { lang: "Bahasa Malaysia", rate: "Excellent" },
-    { lang: "English", rate: "Good" },
-];
-
-let ContactReferences = [
-    { name: "Munigala Arun", company: "Maybank Berhad", position: "Senior Solution Analyst", contact: "+60-11********" },
-    { name: "Muzalina Alias", company: "Prime Minister Office", position: "Head of IT Department", contact: "+60-12*******" },
-]
-
 export {
-    TechStackArr, TimelineArr, ProjectArr, CoreDetails, Education,
-    Languages, ContactReferences, demoText,
+    TimelineArr, ProjectArr, demoText,
 }
