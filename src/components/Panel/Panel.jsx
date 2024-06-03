@@ -60,8 +60,8 @@ export const Panel = ({ data, index }) => {
 
 
     return (
-        <div className={globalCss["gradient-border"]}>
-            <div className={classNames(css.Panel)} key={index}>
+        <div className={globalCss["gradient-border"]} key={index}>
+            <div className={classNames(css.Panel)}>
                 {renderPanelHead(data)}
                 {renderPanelBody(data)}
                 {renderPanelFooter(data)}
