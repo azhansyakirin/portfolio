@@ -1,0 +1,130 @@
+{
+    "app.profile.greet": "Hello, I'm",
+    "app.profile.name": "MUHAMMAD AZHAN SYAKIRIN BIN AZMANI",
+    "app.profile.role": "FRONTEND DEVELOPER",
+    "app.profile.education": [
+        {
+            "course": "Bachelor of Computer Science",
+            "school": "Universiti Putra Malaysia",
+            "year": "2017-2021"
+        },
+        {
+            "course": "Matriculation Program",
+            "school": "Kolej Matrikulasi Selangor",
+            "year": "2015-2017"
+        },
+        {
+            "course": "High School",
+            "school": "SMK Saujana Impian",
+            "year": "2009-2004"
+        }
+    ],
+    "app.profile.basicInformation": [
+        {
+            "icon": "LinkedIn",
+            "title": "LinkedIn",
+            "label": "linkedin.azhansyakirin.dev",
+            "actionUrl": "https://linkedin.azhansyakirin.dev"
+        },
+        {
+            "icon": "GitHub",
+            "title": "Website",
+            "label": "github.azhansyakirin.dev",
+            "actionUrl": "https://github.azhansyakirin.dev"
+        },
+        {
+            "icon": "mail",
+            "title": "Email",
+            "label": "azhansyakirin@gmail.com",
+            "actionUrl": "mailto:azhansyakirin@gmail.com"
+        },
+        {
+            "icon": "phone",
+            "title": "Phone",
+            "label": "+60-142620833",
+            "actionUrl": "tel:+60142620833"
+        }
+    ],
+    "app.profile.languageSpoken": [
+        {
+            "lang": "Bahasa Malaysia",
+            "rate": "Excellent"
+        },
+        {
+            "lang": "English",
+            "rate": "Good"
+        }
+    ],
+    "app.profile.contactReference": [
+        {
+            "name": "Munigala Arun",
+            "company": "Maybank Berhad",
+            "position": "Senior Solution Analyst",
+            "contact": "+60-11********"
+        },
+        {
+            "name": "Muzalina Alias",
+            "company": "Prime Minister Office",
+            "position": "Head of IT Department",
+            "contact": "+60-12*******"
+        }
+    ],
+    "app.profile.techStack": [
+        {
+            "label": "React Js",
+            "icon": "/static/icons/reactjs.svg"
+        },
+        {
+            "label": "Redux",
+            "icon": "/static/icons/redux.svg"
+        },
+        {
+            "label": "HTML",
+            "icon": "/static/icons/html5.svg"
+        },
+        {
+            "label": "Sass",
+            "icon": "/static/icons/sass.svg"
+        },
+        {
+            "label": "CSS",
+            "icon": "/static/icons/css3.svg"
+        },
+        {
+            "label": "JavaScript",
+            "icon": "/static/icons/js.svg"
+        },
+        {
+            "label": "Tailwind",
+            "icon": "/static/icons/tailwindcss.svg"
+        },
+        {
+            "label": "Figma",
+            "icon": "/static/icons/figma.svg"
+        },
+        {
+            "label": "Bootstrap",
+            "icon": "/static/icons/bootstrap4.svg"
+        },
+        {
+            "label": "Google Analytics",
+            "icon": "/static/icons/analytics.svg"
+        },
+        {
+            "label": "Illustrator",
+            "icon": "/static/icons/illustrator.svg"
+        },
+        {
+            "label": "Git",
+            "icon": "/static/icons/git.svg"
+        },
+        {
+            "label": "Jira",
+            "icon": "/static/icons/jira.svg"
+        },
+        {
+            "label": "Php",
+            "icon": "/static/icons/php.svg"
+        }
+    ]
+}
