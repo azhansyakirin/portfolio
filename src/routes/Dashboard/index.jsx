@@ -109,7 +109,7 @@ export const Dashboard = () => {
                             <Label type="sectionTitle" icon="briefcase">Work Experiences</Label>
                             <div className='flex flex-col gap-8'>
                                 {TimelineArr.map((obj, idx) => (
-                                    <Panel data={obj} index={idx} />
+                                    <Panel data={obj} key={idx} />
                                 ))}
                             </div>
                         </main>

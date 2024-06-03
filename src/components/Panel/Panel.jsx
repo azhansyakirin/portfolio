@@ -6,7 +6,7 @@ import { Badge } from "../Badge";
 import css from "./Panel.module.scss";
 import globalCss from "./../../Scss/Global.module.scss";
 
-export const Panel = ({ data, index }) => {
+export const Panel = ({ data }) => {
 
     const renderPanelHead = (data) => {
         return (
@@ -52,7 +52,7 @@ export const Panel = ({ data, index }) => {
         return (
             <div className={css.PanelFoot}>
                 {list.map((x, idx) => (
-                    <Badge item={x} index={idx} key={idx} />
+                    <Badge item={x} key={idx} />
                 ))}
             </div>
         )
@@ -60,7 +60,7 @@ export const Panel = ({ data, index }) => {
 
 
     return (
-        <div className={globalCss["gradient-border"]} key={index}>
+        <div className={globalCss["gradient-border"]}>
             <div className={classNames(css.Panel)}>
                 {renderPanelHead(data)}
                 {renderPanelBody(data)}
