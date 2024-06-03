@@ -11,8 +11,6 @@ const Footer = () => {
 
     const isMobileDevice = isMobile();
 
-    console.log(isMobileDevice)
-
     const date = new Date();
     const year = date.getFullYear();
 
@@ -30,7 +28,7 @@ const Footer = () => {
                 <form>
                     <div className="py-2 flex flex-row justify-between">
                         <h1 className="font-caveat text-3xl">Let's Connect !</h1>
-                        <button onSubmit={() => { console.log("Submitted") }} className="gradient-orange opacity-70 hover:opacity-100 rounded-md font-lato focus-visible:outline-none">Submit &rarr;</button>
+                        <button onSubmit={() => { console.log("Submitted!")}} className="gradient-orange opacity-70 hover:opacity-100 rounded-md font-lato focus-visible:outline-none">Submit &rarr;</button>
                     </div>
                     <div className="py-4 flex flex-col gap-4">
                         <div className="flex flex-col gap-1">
@@ -85,17 +83,17 @@ const Footer = () => {
         <footer className={classNames(globalCss.noprint, "font-jetbrains tablet:w-full text-sm fixed right-0 bottom-1/4 tablet:bottom-1 z-50")}>
             <main className="p-3 tablet:p-1 tablet:w-2/5 rounded-md shadow-md m-auto bg-app-black-2 flex flex-col items-center justify-center gap-1">
                 <div className="social-icons py-2 flex flex-col tablet:flex-row gap-4">
-                    <a className="opacity-50 hover:opacity-100" onClick={() => {window.open('/static/docs/resume.pdf', '_blank')}} title="Print My Resume"><Icons iconId="print" style="w-8 cursor-pointer" /></a>
-                    <a className="opacity-50 hover:opacity-100" href="https://github.com/azhansyakirin" title="Deep dive to my github contribution"><Icons iconId="GitHub" style="w-8 cursor-pointer" /></a>
-                    <a className="opacity-50 hover:opacity-100" href="https://www.linkedin.com/in/azhansyakirin/" title="Connect with me on LinkedIn"><Icons iconId="LinkedIn" style="w-8 cursor-pointer" /></a>
-                    <a className="opacity-50 hover:opacity-100" href="https://wa.me/60142620833" title="Let's have a chit chat on Whatsapp"><Icons iconId="Whatsapp" style="w-8 cursor-pointer" /></a>
+                    <a className="opacity-50 hover:opacity-100" onClick={() => { window.open('/static/docs/resume.pdf', '_blank') }} title="Print My Resume"><Icons iconId="print" style="w-8 cursor-pointer" /></a>
+                    <a className="opacity-50 hover:opacity-100" href="https://github.azhansyakirin.dev" title="Deep dive to my github contribution"><Icons iconId="GitHub" style="w-8 cursor-pointer" /></a>
+                    <a className="opacity-50 hover:opacity-100" href="https://linkedin.azhansyakirin.dev" title="Connect with me on LinkedIn"><Icons iconId="LinkedIn" style="w-8 cursor-pointer" /></a>
+                    <a className="opacity-50 hover:opacity-100" href="https://whatsapp.azhansyakirin.dev" title="Let's have a chit chat on Whatsapp"><Icons iconId="Whatsapp" style="w-8 cursor-pointer" /></a>
                     <a className="opacity-50 hover:opacity-100" onClick={() => handleModalState()} title="Let's Connect!"><Icons iconId="chat" style="w-8 cursor-pointer" /></a>
                 </div>
                 {!isMobileDevice && <div className="social-icons static bottom-0 flex justify-center gap-4 py-2">
                     <p>{`${year} | Made with `}<span className="gradient-orange">&hearts;</span> by Azhan Syakirin</p>
                 </div>}
             </main>
-            <EnquiryModal/>
+            <EnquiryModal />
         </footer>
     )
 }
