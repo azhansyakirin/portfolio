@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Dashboard } from "./Dashboard";
 import { Details } from "./Details";
 import { NotFound } from "./NotFound";
+import { Loader } from "./../components/Loader";
 
 export const PageRoutes = () => {
     return (
         <Router>
-            <Suspense fallback={<div>...loading</div>}>
+            <Suspense fallback={<Loader />}>
                 <Routes>
                     <Route path="/" element={<Dashboard />} />
                     <Route path="/recent-project/" element={<Details />} />
