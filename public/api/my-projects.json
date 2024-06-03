@@ -1,0 +1,150 @@
+{
+    "app.profile.projects": [
+        {
+            "idx": 1,
+            "timeline": "May 2024 - Jul 2024",
+            "title": "Maybank2u Recaptcha for Reset Password",
+            "image": "/static/img/maybank-tower.jpg",
+            "recommended": false,
+            "description": "This project is to add ReCAPTCHA field for reset password section in order to prevent from bot attack.",
+            "badge": [
+                "React",
+                "Google Recaptcha",
+                "Scss"
+            ],
+            "link": "https://maybank2u.com.my",
+            "projectId": "m2u-recaptcha-change-password-2024"
+        },
+        {
+            "idx": 1,
+            "timeline": "Nov 2023 - Sep 2024",
+            "title": "Maybank2u Transaction History Download",
+            "image": "/static/img/maybank-tower.jpg",
+            "recommended": false,
+            "description": "This project is to allow user to download Transaction History in different formats such as CSV, PDF or XLS in a few period options.",
+            "badge": [
+                "React",
+                "Redux",
+                "Scss",
+                "Webpack",
+                "Github Actions",
+                "Jira",
+                "Bootstrap",
+                "REST API"
+            ],
+            "link": "https://maybank2u.com.my",
+            "projectId": "m2u-trx-history-2024",
+            "snapshot": [
+                "/static/img/transaction-history-download.png"
+            ]
+        },
+        {
+            "idx": 2,
+            "timeline": "July 2023 - Aug 2023",
+            "title": "Maybank2u Browser Version Handling",
+            "image": "/static/img/maybank-tower.jpg",
+            "recommended": "BNM Mandatory",
+            "description": "This project is to handle user accessing Maybank2u web via supported browser versions.",
+            "badge": [
+                "Javascript"
+            ],
+            "link": "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/announcements/2023/august/web-browser-compatibility.page",
+            "projectId": "m2u-browser-handling-2023",
+            "snapshot": [
+                "/static/img/unsupported-browser.png"
+            ]
+        },
+        {
+            "idx": 3,
+            "timeline": "Dec 2022 - Mar 2023",
+            "title": "Maybank2u Kill Switch (Phase 2)",
+            "image": "/static/img/maybank-tower.jpg",
+            "recommended": "BNM Mandatory",
+            "description": "This project objectives is to allow customers to perform suspend current/savings account or block credit card through Maybank2u as a new security measures to safeguard against online scams.",
+            "badge": [
+                "React",
+                "Redux",
+                "Scss",
+                "Webpack",
+                "Github Actions",
+                "Jira",
+                "Bootstrap",
+                "REST API"
+            ],
+            "link": "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/services/digital_banking/kill-switch.page",
+            "projectId": "m2u-kill-switch-mvp2-2023",
+            "snapshot": [
+                "/static/img/block-cards.png",
+                "/static/img/suspend-account-1.png",
+                "/static/img/suspend-account-2.png"
+            ]
+        },
+        {
+            "idx": 4,
+            "timeline": "Sep 2022 - Dec 2022",
+            "title": "Maybank2u Kill Switch (Phase 1)",
+            "image": "/static/img/maybank-tower.jpg",
+            "recommended": "BNM Mandatory",
+            "description": "This project objectives is to allow customers to perform deactivation of Maybank2u access via Maybank2u as a new security measures to safeguard against online scams.",
+            "badge": [
+                "React",
+                "Redux",
+                "Scss",
+                "Webpack",
+                "Github Actions",
+                "Jira",
+                "Bootstrap",
+                "REST API"
+            ],
+            "link": "https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/services/digital_banking/kill-switch.page",
+            "projectId": "m2u-kill-switch-mvp1-2023",
+            "snapshot": [
+                "/static/img/deactivate-m2u-access.png"
+            ]
+        },
+        {
+            "idx": 5,
+            "timeline": "Sep 2022 - Jan 2023",
+            "title": "Maybank2u Personal Settings Enhancement",
+            "image": "/static/img/maybank-tower.jpg",
+            "recommended": false,
+            "description": "This project is to give a customers fresh look on personalize their details.",
+            "badge": [
+                "React",
+                "Redux",
+                "Scss",
+                "Webpack",
+                "Github Actions",
+                "Jira",
+                "Bootstrap",
+                "REST API"
+            ],
+            "link": "https://maybank2u.com.my",
+            "projectId": "m2u-personal-settings-2023",
+            "snapshot": []
+        },
+        {
+            "idx": 6,
+            "timeline": "Aug 2022 - Oct 2022",
+            "title": "Maybank2u London Statement",
+            "image": "/static/img/maybank-tower.jpg",
+            "recommended": false,
+            "description": "This project is to allow customers with Maybank2u United Kingdom's account to view and access their statement straight away from Maybank2u Malaysia.",
+            "badge": [
+                "React",
+                "Redux",
+                "Scss",
+                "Webpack",
+                "Github Actions",
+                "Jira",
+                "Bootstrap",
+                "REST API"
+            ],
+            "link": "https://maybank2u.com.my",
+            "projectId": "m2u-london-statement-2022",
+            "snapshot": [
+                "/static/img/london-account-linking.png"
+            ]
+        }
+    ]
+}
