@@ -17,7 +17,7 @@ export const Card = ({ item }) => {
 
     return (
         <div className="w-72 bg-app-black-1 shadow-xl rounded-md cursor-pointer">
-            <figure className='max-h-36 overflow-hidden rounded-t-md flex items-center content-center'>
+            <figure className='h-36 overflow-hidden rounded-t-md flex items-center content-center'>
                 <img src={image || "https://placehold.co/600x400"} alt={title} />
             </figure>
             <div className="relative p-6 flex flex-col items-start">
