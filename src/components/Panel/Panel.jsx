@@ -2,7 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import Markdown from "react-markdown";
 import Icons from "../../assets/icons/icons";
-import { Badge } from "../Badge";
+import { Pill as Badge } from "../Pill";
 import css from "./Panel.module.scss";
 import globalCss from "./../../Scss/Global.module.scss";
 

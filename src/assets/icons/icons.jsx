@@ -16,6 +16,7 @@ import Pin from "./pin.svg";
 import Calendar from "./calendar.svg";
 import Print from "./printer.svg";
 import Chat from "./chat.svg";
+import Link from "./link.svg";
 
 const icons = {
     GitHub: GithubIcons,
@@ -38,6 +39,7 @@ const icons = {
     print: Print,
     bulb: "/static/icons/bulb.svg",
     chat: Chat,
+    link: Link,
 }
 
 const Icons = ({ iconId, style }) => {

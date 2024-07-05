@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import {
     Footer,
@@ -39,6 +39,13 @@ export const Dashboard = () => {
             <meta name="twitter:description" content="Welcome to my personal online portfolio." />
         </Helmet>
     };
+
+    const quicklinkRouteMap = [
+        { to: "/recent-project", label: "Project" },
+        { to: "/side-project", label: "Side Project" },
+        { to: "/figma-design", label: "Figma Design" },
+        { to: "/community-engagement", label: "Community Engagement" },
+    ]
 
     return (
         <>
@@ -127,10 +134,9 @@ export const Dashboard = () => {
                             </div>
                         </main>
                         <main className='flex flex-row flex-wrap gap-4 py-8'>
-                            <Link className='font-caveat gradient-orange text-2xl tablet:text-3xl hover:text-white hover:underline' to="/recent-project/">Projects</Link>
-                            <Link className='font-caveat gradient-orange text-2xl tablet:text-3xl hover:text-white hover:underline' to="/side-project/">Side Project</Link>
-                            <Link className='font-caveat gradient-orange text-2xl tablet:text-3xl hover:text-white hover:underline' to="/figma-design">Figma Design</Link>
-                            <Link className='font-caveat gradient-orange text-2xl tablet:text-3xl hover:text-white hover:underline' to="/community-engagement">Community Engagement</Link>
+                            {quicklinkRouteMap.map((obj, i) => (
+                                <Link key={i} className='font-caveat gradient-orange text-2xl tablet:text-3xl hover:text-white hover:underline' to={obj.to}>{obj.label}</Link>
+                            ))}
                         </main>
                     </section>
                     <Footer />

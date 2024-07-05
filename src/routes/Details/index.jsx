@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { useNavigate, useParams } from "react-router-dom";
-import { Badge, Label } from '../../components';
+import { Pill as Badge, Label } from '../../components';
 import { Helmet } from 'react-helmet';
 import Icons from '../../assets/icons/icons';
 import { isMobile } from '../../utils/helper';

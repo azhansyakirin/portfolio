@@ -1,0 +1,40 @@
+{
+    "items": [
+        {
+            "idx": 1,
+            "title": "Car Traders",
+            "image": "/static/img/car-traders-landing.png",
+            "description": "Developed a mini car dealer website which allow user to search for desired car through the input field.",
+            "link": "https://car-traders.vercel.app//",
+            "figmaLink": "https://www.figma.com/design/uWWVyU7EM2KGrkiEWiHvIz/Portfolio?node-id=121-115&t=py5690dA9qRDfCqR-1",
+            "uniqueId": "car-traders",
+            "snapshot": [
+                "/static/img/3.Rich-Text-Editor-Playground.png"
+            ]
+        },
+        {
+            "idx": 2,
+            "title": "Mini Front-End Cheat-Sheet",
+            "image": "/static/img/cheatsheet-landing.png",
+            "description": "Developed a mini frontend cheatsheet for developer references.",
+            "link": "https://cheatsheet.azhansyakirin.dev/",
+            "figmaLink": "https://www.figma.com/design/uWWVyU7EM2KGrkiEWiHvIz/Portfolio?node-id=121-115&t=py5690dA9qRDfCqR-1",
+            "uniqueId": "mini-frontend-cheatsheet",
+            "snapshot": [
+                "https://cheatsheet.azhansyakirin.dev/static/img/metacard.png"
+            ]
+        },
+        {
+            "idx": 3,
+            "title": "Lanyard Hipster",
+            "image": "/static/img/lanyard-hipster-landing.png",
+            "description": "Developed a business page to display product, business info with dynamic information and calculation according to business logic.",
+            "link": "https://lanyardhipster.com.my/",
+            "figmaLink": "https://www.figma.com/design/uWWVyU7EM2KGrkiEWiHvIz/Portfolio?node-id=121-115&t=py5690dA9qRDfCqR-1",
+            "uniqueId": "lanyard-hipster",
+            "snapshot": [
+                "https://cheatsheet.azhansyakirin.dev/static/img/metacard.png"
+            ]
+        }
+    ]
+}

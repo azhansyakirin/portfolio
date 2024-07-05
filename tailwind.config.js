@@ -25,6 +25,7 @@ export default {
         lato: ['Lato'],
         sourceSerif: ['Source-Serif-4'],
         caveat: ['Caveat'],
+        lora: ['Lora'],
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 50s linear infinite',

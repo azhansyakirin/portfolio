@@ -23,6 +23,11 @@
   src: url('./assets/fonts/Caveat-Regular.ttf');
 }
 
+@font-face {
+  font-family: "Lora";
+  src: url('./assets/fonts/Lora-Regular.ttf');
+}
+
 :root {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.87);
