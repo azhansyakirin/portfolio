@@ -36,6 +36,7 @@ const Footer = () => {
                             <input
                                 type="text"
                                 value={name}
+                                name="name"
                                 onChange={(ev) => setName(ev.target.value)}
                                 placeholder="Snoring Panda"
                                 spellCheck={false}
@@ -48,6 +49,7 @@ const Footer = () => {
                             <input
                                 type="tel"
                                 value={phone}
+                                name="phone"
                                 onChange={ev => setPhone(ev.target.value)}
                                 placeholder="0123456789"
                                 className="px-4 py-2 bg-neutral-600 rounded-lg font-lato focus-visible:outline-yellow-600" />
@@ -57,6 +59,7 @@ const Footer = () => {
                             <input
                                 type="email"
                                 value={email}
+                                name="email"
                                 onChange={ev => setEmail(ev.target.value)}
                                 placeholder="snoringpanda@gmail.com"
                                 required
