@@ -8,7 +8,7 @@ export const isMobile = () => {
             setWideScreen(window.innerWidth < 575);
         };
 
-        handleResize(); 
+        handleResize();
 
         window.addEventListener('resize', handleResize);
 
@@ -19,3 +19,15 @@ export const isMobile = () => {
 
     return wideScreen;
 };
+
+
+export const getDate = (type) => {
+
+    const date = new Date();
+
+    const dateFormat = {
+        year: date.getFullYear(),
+    }
+
+    return dateFormat[type || 'year']
+}
