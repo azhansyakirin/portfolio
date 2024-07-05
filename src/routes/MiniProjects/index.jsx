@@ -1,10 +1,11 @@
 import { Fragment, useEffect, useState } from 'react';
 import { useNavigate, useParams } from "react-router-dom";
-import { Card, Label } from '../../components';
+import { Card } from '../../components';
 import { Helmet } from 'react-helmet';
 import Icons from '../../assets/icons/icons';
-import { isMobile } from '../../utils/helper';
+import { getDate } from '../../utils/helper';
 import { Loader } from '../../components/Loader';
+import { Breadcrumb } from '../../components/Breadcrumb';
 
 export const MiniProjects = (props) => {
 
@@ -14,7 +15,7 @@ export const MiniProjects = (props) => {
 
     let { uniqueId } = useParams();
 
-    let [showLoader, setShowLoader] = useState(false);
+    let [showLoader, setShowLoader] = useState(true);
     let [fetchRes, setFetchRes] = useState([]);
 
     function fetchApiRequest() {
@@ -22,7 +23,7 @@ export const MiniProjects = (props) => {
             .then((res) => res.json())
             .then((data) => {
                 setFetchRes(data);
-                setShowLoader(true);
+                setShowLoader(false);
             })
             .catch(err => { console.error(err) })
     }
@@ -66,7 +67,7 @@ export const MiniProjects = (props) => {
 
     const renderPageTitle = () => {
         return <Helmet>
-            <title>{`Portfolio | Figma Design | ${title}`}</title>
+            <title>{`Portfolio | Mini Projects | ${title}`}</title>
             <meta name='description' content={description} />
             <meta property="og:title" content={`Project | ${title}`} />
             <meta property="og:description" content={description} />
@@ -80,13 +81,17 @@ export const MiniProjects = (props) => {
         <Fragment>
             {renderPageTitle()}
             {showLoader ?
-                <div className='flex flex-col tablet:flex-row p-8 tablet:p-32 justify-center'>
-                    <div className='absolute top-1 left-1 tablet:p-4 cursor-pointer hover:gradient-orange' onClick={() => navigate('/')}>&larr; Return</div>
+                <Loader />
+                : <div className='flex flex-col p-8 tablet:p-32 justify-center'>
+                    <Breadcrumb />
+                    <div className='w-full top-1 left-1 py-4'>
+                        <a className="cursor-pointer hover:gradient-orange" onClick={() => navigate('/')}>&larr; Return</a>
+                    </div>
                     <article className='my-8 flex flex-wrap gap-8 justify-center tablet:justify-start'>
                         {renderCardLists()}
                     </article>
+                    <div className='w-full text-center py-4'><p className='font-jetbrains text-sm'>{`${getDate('year')} | Made with `}<span className="gradient-orange">&hearts;</span> by <a href='https://linkedin.azhansyakirin.dev' target="_blank" className='hover:gradient-orange'>Azhan Syakirin</a></p></div>
                 </div>
-                : <Loader />
             }
         </Fragment>
     )
