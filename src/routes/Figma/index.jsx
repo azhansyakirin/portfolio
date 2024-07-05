@@ -56,13 +56,13 @@ export const Figma = (props) => {
 
     const renderPageTitle = () => {
         return <Helmet>
-            <title>{`Portfolio | Figma Design | ${title}`}</title>
-            <meta name='description' content={description} />
-            <meta property="og:title" content={`Project | ${title}`} />
-            <meta property="og:description" content={description} />
-            <meta property="og:image" content={image} />
-            <meta name="twitter:title" content={`Figma Design | ${title}`} />
-            <meta name="twitter:description" content={description} />
+            <title>{`Portfolio | Figma Design | ${title || ""}`}</title>
+            <meta name='description' content={description || ""} />
+            <meta property="og:title" content={`Portfolio | Figma Design | ${title || ""}`} />
+            <meta property="og:description" content={description || ""} />
+            <meta property="og:image" content={image || ""} />
+            <meta name="twitter:title" content={`Portfolio | Figma Design | ${title || ""}`} />
+            <meta name="twitter:description" content={description || ""} />
         </Helmet>
     };
 

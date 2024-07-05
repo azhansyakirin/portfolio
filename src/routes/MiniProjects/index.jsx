@@ -67,13 +67,13 @@ export const MiniProjects = (props) => {
 
     const renderPageTitle = () => {
         return <Helmet>
-            <title>{`Portfolio | Mini Projects | ${title}`}</title>
-            <meta name='description' content={description} />
-            <meta property="og:title" content={`Project | ${title}`} />
-            <meta property="og:description" content={description} />
-            <meta property="og:image" content={image} />
-            <meta name="twitter:title" content={`Figma Design | ${title}`} />
-            <meta name="twitter:description" content={description} />
+            <title>{`Portfolio | Mini Projects`}</title>
+            <meta name='description' content={description || ""} />
+            <meta property="og:title" content={`Portfolio | Mini Projects`} />
+            <meta property="og:description" content={description || ""} />
+            <meta property="og:image" content={image || ""} />
+            <meta name="twitter:title" content={`Portfolio | Mini Projects`} />
+            <meta name="twitter:description" content={description || ""} />
         </Helmet>
     };
 
