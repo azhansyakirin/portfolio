@@ -109,6 +109,11 @@ const ProjectArr = [
     },
 ];
 
+const pageList = {
+    'side-project': "Side Project",
+    'figma-design': "Figma Design",
+}
+
 export {
-    TimelineArr, ProjectArr, demoText,
+    TimelineArr, ProjectArr, demoText, pageList,
 }
