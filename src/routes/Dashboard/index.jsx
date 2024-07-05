@@ -133,11 +133,11 @@ export const Dashboard = () => {
                                 </div>
                             </div>
                         </main>
-                        <main className='flex flex-row flex-wrap gap-4 py-8'>
+                        <nav className='flex flex-row flex-wrap gap-4 py-8'>
                             {quicklinkRouteMap.map((obj, i) => (
                                 <Link key={i} className='font-caveat gradient-orange text-2xl tablet:text-3xl hover:text-white hover:underline' to={obj.to}>{obj.label}</Link>
                             ))}
-                        </main>
+                        </nav>
                     </section>
                     <Footer />
                 </div>
