@@ -5,7 +5,7 @@
             "title": "Portfolio",
             "image": "/static/img/tropical-bg.jpg",
             "description": "Online portfolio design.",
-            "link": "https://www.figma.com/design/uWWVyU7EM2KGrkiEWiHvIz/Portfolio?node-id=98-85&t=py5690dA9qRDfCqR-1",
+            "link": "https://www.figma.com/design/uWWVyU7EM2KGrkiEWiHvIz/Portfolio?node-id=98-84&t=pjoFA0ko7TItcV5n-1",
             "uniqueId": "figma-portfolio",
             "snapshot": [
                 "/static/img/1.Main.png"
@@ -16,12 +16,10 @@
             "title": "Quicklink",
             "image": "/static/img/tropical-bg.jpg",
             "description": "Linktree like page in online portfolio.",
-            "link": "https://www.figma.com/proto/uWWVyU7EM2KGrkiEWiHvIz/Portfolio?node-id=98-84&t=acMCQaYYQpPERzna-1",
+            "link": "https://www.figma.com/design/uWWVyU7EM2KGrkiEWiHvIz/Portfolio?node-id=98-84&t=pjoFA0ko7TItcV5n-1",
             "uniqueId": "figma-quicklink",
             "snapshot": [
-                "/static/img/block-cards.png",
-                "/static/img/suspend-account-1.png",
-                "/static/img/suspend-account-2.png"
+                "/static/img/linktree.png"
             ]
         },
         {
@@ -29,7 +27,7 @@
             "title": "Rich Text Editor Playground",
             "image": "/static/img/tropical-bg.jpg",
             "description": "A rich text editor mini project.",
-            "link": "https://www.figma.com/design/uWWVyU7EM2KGrkiEWiHvIz/Portfolio?node-id=121-115&t=py5690dA9qRDfCqR-1",
+            "link": "https://www.figma.com/design/uWWVyU7EM2KGrkiEWiHvIz/Portfolio?node-id=98-84&t=pjoFA0ko7TItcV5n-1",
             "uniqueId": "figma-rtf-editor",
             "snapshot": [
                 "/static/img/3.Rich-Text-Editor-Playground.png"
@@ -40,7 +38,7 @@
             "title": "Mini Frontend Cheatsheet",
             "image": "/static/img/tropical-bg.jpg",
             "description": "Frontend cheatsheet page for developers!",
-            "link": "https://www.figma.com/proto/uWWVyU7EM2KGrkiEWiHvIz/Portfolio?node-id=98-84&t=acMCQaYYQpPERzna-1",
+            "link": "https://www.figma.com/design/uWWVyU7EM2KGrkiEWiHvIz/Portfolio?node-id=98-84&t=pjoFA0ko7TItcV5n-1",
             "uniqueId": "figma-frontend-cheatsheet",
             "snapshot": [
                 "/static/img/4.Cheatsheet-Landing.png",
