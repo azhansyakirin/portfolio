@@ -21,11 +21,11 @@ export const Card = ({ item }) => {
                 <img src={image || "https://placehold.co/600x400"} alt={title} />
             </figure>
             <div className="relative p-6 flex flex-col items-start">
-                <h2 className="card-title text-2xl py-4">
+                <h2 className="font-caveat text-3xl py-4">
                     {title}
                 </h2>
                 <p className='text-lg opacity-70'>{description}</p>
-                <div className="justify-start py-2">
+                <div className="flex flex-row flex-wrap gap-2 justify-start py-2">
                     {badge.map(((x, idx) => (
                         <Badge item={x} index={idx} key={idx} />
                     )))}
