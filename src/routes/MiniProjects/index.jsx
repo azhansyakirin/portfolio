@@ -56,6 +56,7 @@ export const MiniProjects = (props) => {
                     description: x.description,
                     image: x.image,
                     link: x.link,
+                    badge: x.badge || []
                 }
             };
 

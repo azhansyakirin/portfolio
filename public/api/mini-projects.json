@@ -5,9 +5,10 @@
             "title": "Car Traders",
             "image": "/static/img/car-traders-landing.png",
             "description": "Developed a mini car dealer website which allow user to search for desired car through the input field.",
-            "link": "https://car-traders.vercel.app//",
+            "link": "https://car-traders.vercel.app/",
             "figmaLink": "https://www.figma.com/design/uWWVyU7EM2KGrkiEWiHvIz/Portfolio?node-id=121-115&t=py5690dA9qRDfCqR-1",
             "uniqueId": "car-traders",
+            "badge": ["Javascript", "React", "Vite", "Tailwind"],
             "snapshot": [
                 "/static/img/3.Rich-Text-Editor-Playground.png"
             ]
@@ -20,6 +21,7 @@
             "link": "https://cheatsheet.azhansyakirin.dev/",
             "figmaLink": "https://www.figma.com/design/uWWVyU7EM2KGrkiEWiHvIz/Portfolio?node-id=121-115&t=py5690dA9qRDfCqR-1",
             "uniqueId": "mini-frontend-cheatsheet",
+            "badge": ["Javascript", "React", "Vite", "Tailwind", "Context", "Local Storage"],
             "snapshot": [
                 "https://cheatsheet.azhansyakirin.dev/static/img/metacard.png"
             ]
@@ -32,6 +34,7 @@
             "link": "https://lanyardhipster.com.my/",
             "figmaLink": "https://www.figma.com/design/uWWVyU7EM2KGrkiEWiHvIz/Portfolio?node-id=121-115&t=py5690dA9qRDfCqR-1",
             "uniqueId": "lanyard-hipster",
+            "badge": ["Javascript", "React", "Vite", "Sass", "Axios", "Tailwind", "Redux", "Local Storage", "Session Storage", "Node Js", "Php"],
             "snapshot": [
                 "https://cheatsheet.azhansyakirin.dev/static/img/metacard.png"
             ]
