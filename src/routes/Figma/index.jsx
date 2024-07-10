@@ -5,7 +5,6 @@ import { Helmet } from 'react-helmet';
 import Icons from '../../assets/icons/icons';
 import { isMobile } from '../../utils/helper';
 import { Loader } from '../../components/Loader';
-import { Breadcrumb } from '../../components/Breadcrumb';
 
 export const Figma = (props) => {
 
@@ -107,7 +106,6 @@ export const Figma = (props) => {
                             <section id="left-panel" className='bg-app-black-1 w-full tablet:w-[25%] px-0 py-[109px] relative overflow-hidden'>
                                 <div className='flex flex-col gap-4 items-center justify-start text-left w-full'>
                                     <span className='text-left mb-8'><Label type="sectionTitle" icon="bulb">Projects</Label></span>
-                                    <div className='place-self-start px-4'><Breadcrumb /></div>
                                     {ProjectArr?.map((obj, index) => (
                                         <div className={`shadow-md w-full py-4 px-8 h-20 ${selectedProjectId === obj.uniqueId ? 'gradient-orange' : ''}`}>
                                             <h1
@@ -141,7 +139,7 @@ export const Figma = (props) => {
                                 <h2 className="tablet:text-2xl font-semibold">Project Description</h2>
                                 <div className="my-4 flex flex-col gap-4">
                                     <p>{description}</p>
-                                    <a href={figmaLink} target='_blank'>
+                                    <a href={link} target='_blank'>
                                         <p className='inline-flex gap-4 items-center cursor-pointer hover:gradient-orange'>
                                             <Icons iconId="link" style="w-6 text-white" /> Preview in Figma
                                         </p>
