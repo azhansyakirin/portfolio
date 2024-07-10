@@ -41,6 +41,8 @@
             "link": "https://www.figma.com/design/uWWVyU7EM2KGrkiEWiHvIz/Portfolio?node-id=98-84&t=pjoFA0ko7TItcV5n-1",
             "uniqueId": "figma-frontend-cheatsheet",
             "snapshot": [
+                "/static/img/cheatsheet-landing-light.png",
+                "/static/img/cheatsheet-javascript-light.png",
                 "/static/img/4.Cheatsheet-Landing.png",
                 "/static/img/5.Cheatsheet-Javascript.png"
             ]
