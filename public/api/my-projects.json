@@ -2,11 +2,11 @@
     "app.profile.projects": [
         {
             "idx": 1,
-            "timeline": "Jul 2024 - Oct 2024",
+            "timeline": "Jul 2024 - Current",
             "title": "Maybank2u Api Revamped",
             "image": "/static/img/maybank-tower.jpg",
             "recommended": false,
-            "description": "This project is to change the services from old channel to new channel which require changes from frontend side in terms of key mapping, data structure, and endpoints call.",
+            "description": "This project is to change the services from old channel to new channel which require changes from frontend side in terms of data mapping, data structure, and endpoints call.",
             "badge": [
                 "React",
                 "REST API",
