@@ -67,7 +67,7 @@
             "idx": 4,
             "title": "Baby Kick Tracker",
             "image": "/static/img/baby-kick-tracker-landing.png",
-            "description": "A baby kick tracker app built to help mothers to track off their baby's kick",
+            "description": "A baby kick tracker app built to help mothers to track their baby's kicks.",
             "link": "https://baby-kick-tracker.vercel.app/",
             "figmaLink": "",
             "uniqueId": "baby-kick-tracker",
