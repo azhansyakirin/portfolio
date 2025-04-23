@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import classNames from 'classnames';
 import {
     Footer,
@@ -12,7 +12,6 @@ import globalCss from "./../../Scss/Global.module.scss";
 import Icons from '../../assets/icons/icons';
 import { Panel } from '../../components/Panel/Panel';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
 import { Loader } from '../../components/Loader';
 
 export const Dashboard = () => {
@@ -25,20 +24,8 @@ export const Dashboard = () => {
                 .then((res) => res.json())
                 .then((data) => setLanguage(data))
                 .catch((error) => console.error('Error fetching the language data:', error))
-        }, 1000)
+        }, 0)
     }, []);
-
-    const renderPageTitle = () => {
-        return <Helmet>
-            <title>{`Portfolio | Azhan Syakirin`}</title>
-            <meta name='description' content="Welcome to my personal online portfolio." />
-            <meta property="og:title" content={`Portfolio | Azhan Syakirin`} />
-            <meta property="og:description" content="Welcome to my personal online portfolio." />
-            <meta property="og:image" content="/static/img/memoji.jpg" />
-            <meta name="twitter:title" content={`Portfolio | Azhan Syakirin`} />
-            <meta name="twitter:description" content="Welcome to my personal online portfolio." />
-        </Helmet>
-    };
 
     const quicklinkRouteMap = [
         { to: "/recent-project", label: "Project" },
@@ -47,9 +34,18 @@ export const Dashboard = () => {
         { to: "/community-engagement", label: "Community Engagement" },
     ]
 
+    const sortTimeline = useCallback(() => {
+        const sortedTimeline = [...TimelineArr].sort((a, b) => {
+            return b.idx - a.idx;
+        });
+        return sortedTimeline.map((obj) => {
+            const { idx, ...rest } = obj;
+            return rest;
+        });
+    }, [TimelineArr]);
+
     return (
         <>
-            {renderPageTitle()}
             {language ?
                 <div className='flex flex-col tablet:flex-row'>
                     <section id="left-panel" className='bg-[#292929] w-full tablet:w-[30%] px-[3rem] pt-[109px] relative overflow-hidden'>
@@ -115,7 +111,7 @@ export const Dashboard = () => {
                         <main id="WorkExperiences" className='py-8 flex flex-col gap-8'>
                             <Label type="sectionTitle" icon="briefcase">Work Experiences</Label>
                             <div className='flex flex-col gap-8'>
-                                {TimelineArr.map((obj, idx) => (
+                                {sortTimeline().map((obj, idx) => (
                                     <Panel data={obj} key={idx} />
                                 ))}
                             </div>
