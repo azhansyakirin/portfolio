@@ -3,7 +3,17 @@ const demoText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d
 const TimelineArr = [
     {
         idx: 1,
-        timeline: 'Feb 2022 - Current',
+        timeline: 'Mar 2021 - Feb 2022',
+        title: "Prime Minister Office",
+        position: "Fullstack Developer",
+        location: "Putrajaya",
+        image: "/static/icons/jata.svg",
+        description: "• Developed internal systems for staff use, including Intranet Portal,  IT Helpdesk application, MCO attendance system, Sign Language  Interpreter Application System\n\n• Provided ongoing support and maintenance for existing  applications and servers.\n\n• Set up and configured internal network infrastructure.\n\n• Resolved tickets and provided technical support to ensure smooth  operations.",
+        badge: ['Html', 'Css', 'Php', 'Jquery']
+    },
+    {
+        idx: 2,
+        timeline: 'Feb 2022 - April 2025',
         title: "Maybank Berhad",
         position: "Frontend Developer",
         location: "Kuala Lumpur",
@@ -12,14 +22,14 @@ const TimelineArr = [
         badge: ['React', 'Redux', 'Scss', 'Webpack', 'Github Actions', 'Jira', 'Bootstrap']
     },
     {
-        idx: 2,
-        timeline: 'Mar 2021 - Feb 2022',
-        title: "Prime Minister Office",
-        position: "Fullstack Developer",
-        location: "Putrajaya",
-        image: "/static/icons/jata.svg",
-        description: "• Developed internal systems for staff use, including Intranet Portal,  IT Helpdesk application, MCO attendance system, Sign Language  Interpreter Application System\n\n• Provided ongoing support and maintenance for existing  applications and servers.\n\n• Set up and configured internal network infrastructure.\n\n• Resolved tickets and provided technical support to ensure smooth  operations.",
-        badge: ['Html', 'Css', 'Php', 'Jquery']
+        idx: 3,
+        timeline: 'April 2025 - Present',
+        title: "Demant Technology and Innovation Centre",
+        position: "Frontend Developer",
+        location: "Kuala Lumpur",
+        image: "/static/icons/demant-logo.svg",
+        description: "• Migrate website and content from Sitecore to Strapi\n• Provide enhancement and ideas to improve existing CMS\n\n• Increase the performance of website especially on mass volumes of product page by writing an efficient logic data handling.\n\n• Assisting senior developer on handling website migration and enhancement on UIUX and Strapi Content Manager.",
+        badge: ['React', 'Context', 'Scss', 'Azure Devops', 'Strapi', 'Typescript', 'Next Js']
     },
 ];
 
