@@ -25,7 +25,7 @@ const Footer = () => {
         const [phone, setPhone] = useState("");
         const [email, setEmail] = useState("");
         const [enquiry, setEnquiry] = useState("");
-        const [initialPage, setInitialPage] = useState("thankyou");
+        const [initialPage, setInitialPage] = useState("form");
 
         const handleSubmit = async (e) => {
             e.preventDefault();
