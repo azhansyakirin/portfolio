@@ -57,6 +57,12 @@
     ],
     "app.profile.contactReference": [
         {
+            "name": "Wai Fei Choong",
+            "company": "Demant Technology and Innovation Centre",
+            "position": "Technical Lead",
+            "contact": "+60-12********"
+        },
+        {
             "name": "Munigala Arun",
             "company": "Maybank Berhad",
             "position": "Senior Solution Analyst",

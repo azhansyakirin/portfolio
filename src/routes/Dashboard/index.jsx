@@ -13,6 +13,9 @@ import Icons from '../../assets/icons/icons';
 import { Panel } from '../../components/Panel/Panel';
 import { Link } from 'react-router-dom';
 import { Loader } from '../../components/Loader';
+import { logEvent, setUserProperties } from 'firebase/analytics'
+import { analytics, db } from '../../config/firebase'
+import { doc, setDoc, getDoc } from 'firebase/firestore'
 
 export const Dashboard = () => {
 

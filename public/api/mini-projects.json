@@ -8,6 +8,7 @@
             "link": "https://car-traders.vercel.app/",
             "figmaLink": "https://www.figma.com/design/uWWVyU7EM2KGrkiEWiHvIz/Portfolio?node-id=121-115&t=py5690dA9qRDfCqR-1",
             "uniqueId": "car-traders",
+            "githubRepo": "",
             "badge": [
                 "Javascript",
                 "React",
@@ -26,6 +27,7 @@
             "link": "https://cheatsheet.azhansyakirin.dev/",
             "figmaLink": "https://www.figma.com/design/uWWVyU7EM2KGrkiEWiHvIz/Portfolio?node-id=121-115&t=py5690dA9qRDfCqR-1",
             "uniqueId": "mini-frontend-cheatsheet",
+            "githubRepo": "",
             "badge": [
                 "Javascript",
                 "React",
@@ -46,6 +48,7 @@
             "link": "https://lanyardhipster.com.my/",
             "figmaLink": "https://www.figma.com/design/uWWVyU7EM2KGrkiEWiHvIz/Portfolio?node-id=121-115&t=py5690dA9qRDfCqR-1",
             "uniqueId": "lanyard-hipster",
+            "githubRepo": "",
             "badge": [
                 "Javascript",
                 "React",
@@ -71,6 +74,7 @@
             "link": "https://baby-kick-tracker.vercel.app/",
             "figmaLink": "",
             "uniqueId": "baby-kick-tracker",
+            "githubRepo": "",
             "badge": [
                 "Javascript",
                 "React",
