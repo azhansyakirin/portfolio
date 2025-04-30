@@ -16,6 +16,7 @@ import { Loader } from '../../components/Loader';
 import { logEvent, setUserProperties } from 'firebase/analytics'
 import { analytics, db } from '../../config/firebase'
 import { doc, setDoc, getDoc } from 'firebase/firestore'
+import { Helmet } from 'react-helmet';
 
 export const Dashboard = () => {
 
@@ -47,8 +48,21 @@ export const Dashboard = () => {
         });
     }, [TimelineArr]);
 
+    const renderPageTitle = () => {
+        return <Helmet>
+            <title>{`👨🏻‍💻 Portfolio | Azhan Syakirin`}</title>
+            <meta name='description' content={`Hello! I am your friendly neighbourhood frontend developer. Let's have a discussion on your ideas today. ^_^`} />
+            <meta property="og:title" content={`👨🏻‍💻 Portfolio | Azhan Syakirin`} />
+            <meta property="og:description" content={`Hello! I am your friendly neighbourhood frontend developer. Let's have a discussion on your ideas today. ^_^`} />
+            <meta property="og:image" content="https://azhansyakirin.dev/static/img/memoji.jpg" />
+            <meta name="twitter:title" content={`👨🏻‍💻 Portfolio | Azhan Syakirin`} />
+            <meta name="twitter:description" content={`Hello! I am your friendly neighbourhood frontend developer. Let's have a discussion on your ideas today. ^_^`} />
+        </Helmet>
+    };
+
     return (
         <>
+            {renderPageTitle()}
             {language ?
                 <div className='flex flex-col tablet:flex-row'>
                     <section id="left-panel" className='bg-[#292929] w-full tablet:w-[30%] px-[3rem] pt-[109px] relative overflow-hidden'>

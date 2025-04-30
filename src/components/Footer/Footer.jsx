@@ -3,10 +3,9 @@ import Icons from "../../assets/icons/icons";
 import classNames from "classnames";
 import globalCss from "./../../Scss/Global.module.scss";
 import Modal from "../Modal/Modal";
-import { isMobile } from "../../utils/helper";
-import { logEvent, setUserProperties } from 'firebase/analytics'
-import { analytics, db } from '../../config/firebase'
-import { doc, setDoc, getDoc } from 'firebase/firestore'
+import { isMobile, logAnalyticsEvent } from "../../utils/helper";
+import { db } from '../../config/firebase'
+import { collection, addDoc } from 'firebase/firestore'
 
 const Footer = () => {
 
@@ -30,28 +29,28 @@ const Footer = () => {
         const handleSubmit = async (e) => {
             e.preventDefault();
 
-            const docRef = doc(db, "contacts", `${Date.now()}_${name}`);
-
             try {
-                await setDoc(docRef, {
+                await addDoc(collection(db, "contacts"), {
                     name,
                     phone,
                     email,
                     enquiry,
+                    id: Date.now(),
                     submittedAt: new Date().toISOString()
                 });
 
-                logEvent(analytics, 'form_submission', {
-                    name,
-                    email
+                logAnalyticsEvent({
+                    name: "contact_me_form_submit",
+                    params: {
+                        name,
+                        submittedAt: new Date().toISOString(),
+                    }
                 });
 
-                alert("Thanks for reaching out! I'll be in touch soon.");
                 setName("");
                 setPhone("");
                 setEmail("");
                 setEnquiry("");
-                // updateModalState(false);
                 setInitialPage("thankyou");
             } catch (err) {
                 console.error("Error submitting form:", err);
@@ -136,11 +135,11 @@ const Footer = () => {
         <footer className={classNames(globalCss.noprint, "font-jetbrains tablet:w-full text-sm fixed right-0 bottom-1/4 tablet:bottom-1 z-50")}>
             <main className="p-3 tablet:p-1 tablet:w-2/5 rounded-md shadow-md m-auto bg-app-black-2 flex flex-col items-center justify-center gap-1">
                 <div className="social-icons py-2 flex flex-col tablet:flex-row gap-4">
-                    <a className="opacity-50 hover:opacity-100 active:scale-95" onClick={() => { window.open('/static/docs/Frontend Developer - Muhammad Azhan Syakirin Bin Azmani.pdf', '_blank') }} title="Print My Resume"><Icons iconId="print" style="block w-10 cursor-pointer" /></a>
-                    <a className="opacity-50 hover:opacity-100 active:scale-95" href="https://github.azhansyakirin.dev" title="Deep dive to my github contribution"><Icons iconId="GitHub" style="block w-10 cursor-pointer" /></a>
-                    <a className="opacity-50 hover:opacity-100 active:scale-95" href="https://linkedin.azhansyakirin.dev" title="Connect with me on LinkedIn"><Icons iconId="LinkedIn" style="block w-10 cursor-pointer" /></a>
-                    <a className="opacity-50 hover:opacity-100 active:scale-95" href="https://whatsapp.azhansyakirin.dev" title="Let's have a chit chat on Whatsapp"><Icons iconId="Whatsapp" style="block w-10 cursor-pointer" /></a>
-                    <a className="opacity-50 hover:opacity-100 active:scale-95" onClick={() => handleModalState()} title="Let's Connect!"><Icons iconId="chat" style="block w-10 cursor-pointer" /></a>
+                    <a className="opacity-50 hover:opacity-100 active:scale-95" onClick={() => { logAnalyticsEvent({ name: "view_resume", params: { name: "Resume Download" } }); window.open('/static/docs/Frontend Developer - Muhammad Azhan Syakirin Bin Azmani.pdf', '_blank') }} title="Print My Resume"><Icons iconId="print" style="block w-10 cursor-pointer" /></a>
+                    <a className="opacity-50 hover:opacity-100 active:scale-95" onClick={() => logAnalyticsEvent({ name: "view_github_profile", params: { name: "View Github Profile" } })} href="https://github.azhansyakirin.dev" title="Deep dive to my github contribution"><Icons iconId="GitHub" style="block w-10 cursor-pointer" /></a>
+                    <a className="opacity-50 hover:opacity-100 active:scale-95" onClick={() => logAnalyticsEvent({ name: "view_linkedin", params: { name: "View Linkedin Profile" } })} href="https://linkedin.azhansyakirin.dev" title="Connect with me on LinkedIn"><Icons iconId="LinkedIn" style="block w-10 cursor-pointer" /></a>
+                    <a className="opacity-50 hover:opacity-100 active:scale-95" onClick={() => logAnalyticsEvent({ name: "whatsapp", params: { name: "Whatsapp Me" } })} href="https://whatsapp.azhansyakirin.dev" title="Let's have a chit chat on Whatsapp"><Icons iconId="Whatsapp" style="block w-10 cursor-pointer" /></a>
+                    <a className="opacity-50 hover:opacity-100 active:scale-95" onClick={() => { logAnalyticsEvent({ name: "contact_me_form_click", params: { name: "Let's Connect!" } }); handleModalState() }} title="Let's Connect!"><Icons iconId="chat" style="block w-10 cursor-pointer" /></a>
                 </div>
                 {!isMobileDevice && <div className="social-icons static bottom-0 flex justify-center gap-4 py-2">
                     <p>{`${year} | Made with `}<span className="gradient-orange">&hearts;</span> by Azhan Syakirin</p>
